@@ -32,16 +32,11 @@
     }
 
     .header h1 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       color: #3e2723;
       margin: 0;
-    }
-
-    .header p {
-      font-size: 18px;
-      font-weight: 600;
-      color: #6d4c41;
+      line-height: 1.4;
     }
 
     .carousel {
@@ -54,7 +49,7 @@
 
     .carousel img {
       width: 30%;
-      min-width: 220px;
+      min-width: 200px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       transition: transform 0.3s;
@@ -76,9 +71,28 @@
     }
 
     ul {
-      list-style: square inside;
       margin: 10px 0 20px 0;
       padding: 0;
+    }
+
+    .uses-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .uses-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .uses-list li img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
     @media (max-width: 600px) {
@@ -91,11 +105,16 @@
       }
 
       .header h1 {
-        font-size: 20px;
+        font-size: 18px;
       }
 
-      .header p {
-        font-size: 16px;
+      .uses-list li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .uses-list li img {
+        margin-bottom: 8px;
       }
     }
   </style>
@@ -103,12 +122,12 @@
 <body>
   <div class="container">
     <div class="header">
-  <img src="Images/logo.png" alt="DIET Logo" />
-  <h1>
-    District Institute of Education and Training,<br>
-    Chhibramau, Kannauj
-  </h1>
-</div>
+      <img src="Images/Untitled Project (2).png" alt="DIET Logo" />
+      <h1>
+        District Institute of Education and Training,<br>
+        Chhibramau, Kannauj
+      </h1>
+    </div>
 
     <h2>Indian Rosewood (Sheesham)</h2>
 
@@ -130,11 +149,23 @@
     </p>
 
     <h2>Uses:</h2>
-    <ul>
-      <li>High-quality furniture</li>
-      <li>Musical instruments</li>
-      <li>Boat and ship building</li>
-      <li>Flooring and decorative veneers</li>
+    <ul class="uses-list">
+      <li>
+        <img src="Images/furniture.webp" alt="Furniture">
+        High-quality furniture
+      </li>
+      <li>
+        <img src="Images/instrument.webp" alt="Musical Instruments">
+        Musical instruments
+      </li>
+      <li>
+        <img src="Images/boat.webp" alt="Boat">
+        Boat and ship building
+      </li>
+      <li>
+        <img src="Images/flooring.jpg" alt="Flooring">
+        Flooring and decorative veneers
+      </li>
     </ul>
 
     <h2>Wood Properties:</h2>
