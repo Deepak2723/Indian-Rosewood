@@ -59,21 +59,24 @@
       text-align: center;
     }
 
-    .image-row {
+    .carousel {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 10px;
-      margin: 20px 0;
-      padding: 0 10px;
+      gap: 15px;
+      justify-content: center;
+      margin: 30px 0;
     }
 
-    .row-img {
-      flex: 1;
-      max-width: 32%;
-      height: auto;
+    .carousel img {
+      width: 30%;
+      min-width: 200px;
       border-radius: 8px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
     }
 
     .uses-list {
@@ -116,8 +119,8 @@
         height: 70px;
       }
 
-      .row-img {
-        max-width: 100%;
+       .carousel img {
+        width: 90%;
       }
 
       .uses-list li {
@@ -140,7 +143,7 @@
 
     <h2>Indian Rosewood (Sheesham)</h2>
 
-    <div class="image-row">
+    <div class="carousel">
       <img src="Images/istockphoto-1402597585-612x612.jpg" alt="Indian Rosewood 1" class="row-img">
       <img src="Images/rosewood.jpg" alt="Indian Rosewood 2" class="row-img">
       <img src="Images/Sheesham-tree1.png" alt="Indian Rosewood 3" class="row-img">
