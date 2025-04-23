@@ -7,6 +7,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #fff3e0, #ffffff);
@@ -23,9 +27,9 @@
 
     .container {
       max-width: 960px;
-      margin: 40px auto;
+      margin: 20px auto;
       background: white;
-      padding: 40px;
+      padding: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       animation: slideUp 1s ease-out;
@@ -38,19 +42,19 @@
 
     .college-name {
       text-align: center;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 700;
       color: #3e2723;
       margin-bottom: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 18px;
+      gap: 15px;
       flex-wrap: wrap;
     }
 
     .college-name img {
-      height: 100px;
+      height: 80px;
       border-radius: 8px;
     }
 
@@ -68,15 +72,25 @@
     }
 
     .carousel img {
-      width: 30%;
-      min-width: 200px;
-      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       transition: transform 0.3s;
     }
 
     .carousel img:hover {
       transform: scale(1.05);
+    }
+
+    p, ul {
+      font-size: 16px;
+      padding: 0 10px;
+      margin: 15px 0;
+    }
+
+    ul {
+      list-style: square inside;
     }
 
     .uses-list {
@@ -88,6 +102,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 15px;
+      flex-wrap: wrap;
     }
 
     .uses-list li img {
@@ -96,12 +111,8 @@
       object-fit: cover;
       border-radius: 8px;
       margin-right: 15px;
+      margin-bottom: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-
-    p, ul {
-      margin: 15px 0;
-      font-size: 16px;
     }
 
     .marquee {
@@ -128,21 +139,14 @@
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-
       .college-name {
         flex-direction: column;
-        font-size: 25px;
+        font-size: 22px;
+        gap: 10px;
       }
 
       .college-name img {
-        height: 70px;
-      }
-
-      .carousel img {
-        width: 90%;
+        height: 60px;
       }
 
       .uses-list li {
@@ -151,7 +155,11 @@
       }
 
       .uses-list li img {
-        margin-bottom: 8px;
+        margin: 0 0 10px 0;
+      }
+
+      .marquee span {
+        font-size: 16px;
       }
     }
   </style>
@@ -172,41 +180,52 @@
     </div>
 
     <h2>Botanical Name:</h2>
-    <p><strong>Dalbergia sissoo</strong> – A fast-growing, hardy tree of the legume family native to the Indian subcontinent. It thrives in well-drained alluvial soil and is often found growing along riversides.</p>
+    <p><strong>Dalbergia sissoo</strong> – A fast-growing tree native to the Indian subcontinent, known for its robust wood and cultural value.</p>
 
     <h2>Common Names:</h2>
-    <p>Sheesham, Indian Rosewood, Sissoo, Shisham, Tali (in various regional languages)</p>
+    <p>Sheesham, Indian Rosewood, Sissoo, Shisham</p>
 
     <h2>Description:</h2>
     <p>
-      Indian Rosewood is a large deciduous tree reaching heights of 20–25 meters with a trunk diameter of 2–3 meters. It has compound leaves and pink to white flowers blooming in spring. The tree is known for its dense, reddish-brown heartwood with dark streaks, which makes it a prized timber.
+      Indian Rosewood is a medium to large deciduous tree, typically reaching heights of 20–25 meters. The tree is admired for its graceful structure, deep-rooting system, and beautiful, strong hardwood. The leaves are compound and shed in winter. It produces fragrant white or pinkish flowers in spring and pods in summer.
     </p>
 
     <h2>Uses:</h2>
     <ul class="uses-list">
-      <li><img src="Images/furniture.webp" alt="Furniture"> Durable and elegant furniture like beds, tables, wardrobes, and decorative carvings.</li>
-      <li><img src="Images/instrument.webp" alt="Instruments"> Sought-after wood for classical instruments including sitars, harmoniums, and tablas.</li>
-      <li><img src="Images/boat.webp" alt="Boats"> Ideal for watercraft construction due to its resistance to water and pests.</li>
-      <li><img src="Images/flooring.jpg" alt="Flooring"> Used in luxury flooring, wood paneling, and ornamental wood veneers.</li>
+      <li>
+        <img src="Images/furniture.webp" alt="Furniture">
+        Used in crafting luxury furniture such as sofas, dining sets, and wardrobes due to its polish and strength.
+      </li>
+      <li>
+        <img src="Images/instrument.webp" alt="Musical Instruments">
+        Ideal for traditional Indian instruments like sitar, tabla, and harmonium.
+      </li>
+      <li>
+        <img src="Images/boat.webp" alt="Boat Building">
+        Used in boat building for its water-resistance and ability to withstand humid conditions.
+      </li>
+      <li>
+        <img src="Images/flooring.jpg" alt="Flooring">
+        Frequently used in hardwood flooring and luxury interior paneling.
+      </li>
     </ul>
 
     <h2>Wood Properties:</h2>
     <ul>
-      <li>Density: 770–880 kg/m³ — heavy and compact</li>
-      <li>Hardness: Very high; resists denting and wear</li>
-      <li>Color: Deep reddish-brown with darker veins</li>
-      <li>Termite and fungal resistance</li>
-      <li>Excellent durability for long-lasting structures</li>
+      <li>Hard, dense, reddish-brown wood with deep veins</li>
+      <li>Highly durable, termite and weather resistant</li>
+      <li>Finishes well with polish or varnish</li>
+      <li>Used in carving, turning, and cabinetry</li>
     </ul>
 
     <h2>Ecological Importance:</h2>
     <p>
-      Sheesham trees improve soil health by fixing atmospheric nitrogen. Their shade is essential in agroforestry systems, supporting crop diversity. The tree is also effective in preventing erosion on riverbanks and highways due to its strong root system.
+      Sheesham trees are nitrogen-fixing and enhance soil fertility. They prevent erosion, support agroforestry systems, and provide shelter and food for birds and bees. Their shade helps in rural landscapes and contributes to ecological balance.
     </p>
 
     <h2>Cultural Significance:</h2>
     <p>
-      Sheesham wood is revered in Indian tradition. It’s used in temples and religious ceremonies, particularly for sacred furniture and offerings. Prayer beads (japa malas) are often made of Sheesham for their symbolic strength and purity.
+      Considered sacred in many parts of India, Sheesham wood is used in temples, religious ceremonies, and holy artifacts. It symbolizes strength, endurance, and prosperity.
     </p>
   </div>
 
