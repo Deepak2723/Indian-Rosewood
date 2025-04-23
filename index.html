@@ -9,11 +9,11 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
       background: linear-gradient(135deg, #fff3e0, #ffffff);
       margin: 0;
       padding: 0;
       animation: fadeIn 1s ease-in;
+      line-height: 1.6;
     }
 
     @keyframes fadeIn {
@@ -102,7 +102,29 @@
     p, ul {
       margin: 15px 0;
       font-size: 16px;
-      line-height: 1.6;
+    }
+
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #4e342e;
+      color: white;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 12s linear infinite;
+    }
+
+    @keyframes scroll {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
     }
 
     @media (max-width: 600px) {
@@ -119,7 +141,7 @@
         height: 70px;
       }
 
-       .carousel img {
+      .carousel img {
         width: 90%;
       }
 
@@ -144,58 +166,52 @@
     <h2>Indian Rosewood (Sheesham)</h2>
 
     <div class="carousel">
-      <img src="Images/istockphoto-1402597585-612x612.jpg" alt="Indian Rosewood 1" class="row-img">
-      <img src="Images/rosewood.jpg" alt="Indian Rosewood 2" class="row-img">
-      <img src="Images/Sheesham-tree1.png" alt="Indian Rosewood 3" class="row-img">
+      <img src="Images/istockphoto-1402597585-612x612.jpg" alt="Indian Rosewood 1">
+      <img src="Images/rosewood.jpg" alt="Indian Rosewood 2">
+      <img src="Images/Sheesham-tree1.png" alt="Indian Rosewood 3">
     </div>
 
     <h2>Botanical Name:</h2>
-    <p><strong>Dalbergia sissoo</strong></p>
+    <p><strong>Dalbergia sissoo</strong> – A fast-growing, hardy tree of the legume family native to the Indian subcontinent. It thrives in well-drained alluvial soil and is often found growing along riversides.</p>
 
     <h2>Common Names:</h2>
-    <p>Sheesham, Indian Rosewood, Sissoo, Shisham</p>
+    <p>Sheesham, Indian Rosewood, Sissoo, Shisham, Tali (in various regional languages)</p>
 
     <h2>Description:</h2>
     <p>
-      Indian Rosewood is a deciduous tree native to the Indian subcontinent. It is known for its strong and durable hardwood, making it ideal for furniture and construction.
+      Indian Rosewood is a large deciduous tree reaching heights of 20–25 meters with a trunk diameter of 2–3 meters. It has compound leaves and pink to white flowers blooming in spring. The tree is known for its dense, reddish-brown heartwood with dark streaks, which makes it a prized timber.
     </p>
 
     <h2>Uses:</h2>
     <ul class="uses-list">
-      <li>
-        <img src="Images/furniture.webp" alt="Furniture">
-        High-quality furniture
-      </li>
-      <li>
-        <img src="Images/instrument.webp" alt="Musical Instruments">
-        Musical instruments
-      </li>
-      <li>
-        <img src="Images/boat.webp" alt="Boat">
-        Boat and ship building
-      </li>
-      <li>
-        <img src="Images/flooring.jpg" alt="Flooring">
-        Flooring and decorative veneers
-      </li>
+      <li><img src="Images/furniture.webp" alt="Furniture"> Durable and elegant furniture like beds, tables, wardrobes, and decorative carvings.</li>
+      <li><img src="Images/instrument.webp" alt="Instruments"> Sought-after wood for classical instruments including sitars, harmoniums, and tablas.</li>
+      <li><img src="Images/boat.webp" alt="Boats"> Ideal for watercraft construction due to its resistance to water and pests.</li>
+      <li><img src="Images/flooring.jpg" alt="Flooring"> Used in luxury flooring, wood paneling, and ornamental wood veneers.</li>
     </ul>
 
     <h2>Wood Properties:</h2>
     <ul>
-      <li>Hard, heavy, and durable</li>
-      <li>Rich reddish-brown color</li>
-      <li>Resistant to termites and decay</li>
+      <li>Density: 770–880 kg/m³ — heavy and compact</li>
+      <li>Hardness: Very high; resists denting and wear</li>
+      <li>Color: Deep reddish-brown with darker veins</li>
+      <li>Termite and fungal resistance</li>
+      <li>Excellent durability for long-lasting structures</li>
     </ul>
 
     <h2>Ecological Importance:</h2>
     <p>
-      Indian Rosewood improves soil fertility through nitrogen fixation and provides shade and shelter for wildlife.
+      Sheesham trees improve soil health by fixing atmospheric nitrogen. Their shade is essential in agroforestry systems, supporting crop diversity. The tree is also effective in preventing erosion on riverbanks and highways due to its strong root system.
     </p>
 
     <h2>Cultural Significance:</h2>
     <p>
-      The wood is traditionally used in temples and for religious artifacts due to its strength and sacredness in Indian culture.
+      Sheesham wood is revered in Indian tradition. It’s used in temples and religious ceremonies, particularly for sacred furniture and offerings. Prayer beads (japa malas) are often made of Sheesham for their symbolic strength and purity.
     </p>
+  </div>
+
+  <div class="marquee">
+    <span>Created by Shivani Rajput and Suhawani</span>
   </div>
 </body>
 </html>
